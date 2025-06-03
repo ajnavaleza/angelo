@@ -48,7 +48,7 @@ const About = () => (
         />
       </div>
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
-        Hi, I'm {" "} 
+        Hi, I&apos;m {" "} 
         <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
            Angelo.
         </span>
