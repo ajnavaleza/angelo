@@ -43,6 +43,20 @@ const projects = [
     github: 'https://github.com/arbaji22/ravensproject.github.io',
     external: 'https://arbaji22.github.io/arbaji.github.io/',
   },
+  {
+    title: 'NFL Play Intelligence System',
+    description: 'Engineered an end-to-end data analytics platform that processes 20,000+  NFL play-by-play records to deliver intelligent play-calling recommendations through machine learning.',
+    image: '/project3.jpg',
+    bg: 'bg-gradient-to-br from-green-100 to-yellow-100',
+    tech: [
+      { name: 'Python', color: 'bg-green-600' },
+      { name: 'Pandas', color: 'bg-green-400' },
+      { name: 'Scikit-learn', color: 'bg-green-400' },
+      { name: 'XGBoost', color: 'bg-yellow-400' }
+    ],
+    github: 'https://github.com/ajnavaleza/nfl-play-ML',
+    external: 'https://nfl-play-predictor.streamlit.app/',
+  }
 ];
 
 const ProjectsDetails = () => (
