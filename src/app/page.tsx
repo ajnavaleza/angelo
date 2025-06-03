@@ -7,10 +7,10 @@ import Projects from "../components/ProjectsDetails";
 function App() {
   return (
     <main className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white font-sans">
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
+      <About/>
+      <Skills/>
+      <Experience/>
+      <Projects/>
     </main>
   );
 }

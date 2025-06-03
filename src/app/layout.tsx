@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import { Work_Sans } from "next/font/google";
 import "../globals.css";
 import Header from "../components/Header";
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Angelo Navaleza", 
@@ -14,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ scrollBehavior: 'smooth'}}>
-      <body>
+      <body className={workSans.className}>
         <Header />
         <div className="pt-16">{children}</div>
         {/* Fallback smooth scroll script */}

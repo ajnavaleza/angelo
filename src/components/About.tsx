@@ -1,7 +1,38 @@
+'use client';
+
 // components/About.tsx
 import { Download, Github, Linkedin, Mail } from 'lucide-react';
 import SectionWrapper from "./SectionWrapper";
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
+
+const TypingText = ({ text, speed = 100, delay = 0 }: { text: string; speed?: number; delay?: number }) => {
+  const [displayText, setDisplayText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [started, setStarted] = useState(delay === 0);
+
+  useEffect(() => {
+    if (delay > 0) {
+      const delayTimeout = setTimeout(() => {
+        setStarted(true);
+      }, delay);
+      return () => clearTimeout(delayTimeout);
+    }
+  }, [delay]);
+
+  useEffect(() => {
+    if (started && currentIndex < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(prev => prev + text[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, speed);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, text, speed, started]);
+
+  return <span>{displayText}</span>;
+};
 
 const About = () => (
   <SectionWrapper id="about" title="">
@@ -17,9 +48,18 @@ const About = () => (
         />
       </div>
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
-        Hi, I&apos;m <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Angelo.</span>
+        Hi, I'm {" "} 
+        <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+           Angelo.
+        </span>
       </h1>
 
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
+        <TypingText text="CS @ University of Maryland" speed={100} />
+        <span className="animate-pulse">|</span>
+      </h1>
+
+      <br></br>
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
         <a
           href="https://drive.google.com/file/d/1nUwCYxzNlTv2WN5ujiWzYvAg9BQev_b2/view?usp=drive_link"
@@ -36,6 +76,7 @@ const About = () => (
           View My Work
         </a>
       </div>
+      <br></br>
       <div className="flex justify-center items-center space-x-6">
         <a href="https://github.com/ajnavaleza" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="text-gray-500 dark:text-gray-400 hover:text-purple-500 dark:hover:text-pink-500 transition-colors">
           <Github size={28} />

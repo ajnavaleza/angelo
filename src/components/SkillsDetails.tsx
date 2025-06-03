@@ -1,41 +1,43 @@
+import { SiPython, SiJavascript, SiTypescript, SiHtml5, SiRust, SiSwift, SiDart, SiMysql, SiTailwindcss, SiUnity, SiFlutter, SiRedis, SiFirebase, SiNumpy, SiPandas, SiOcaml, SiMongodb, SiGit, SiDocker, SiC, SiTableau, SiIntellijidea, SiAndroidstudio, SiEclipseide, SiXcode, SiNextdotjs} from "react-icons/si";
+import { BiLogoJava} from "react-icons/bi";
+import { DiVisualstudio} from "react-icons/di";
+import { VscVscode } from "react-icons/vsc";
+
 const skillsData = {
   Languages: [
-    { name: 'C', icon: 'C' },
-    { name: 'Python', icon: '🐍' },
-    { name: 'Java', icon: '☕' },
-    { name: 'JavaScript', icon: 'JS' },
-    { name: 'TypeScript', icon: 'TS' },
-    { name: 'HTML/CSS', icon: '🌐' },
-    { name: 'OCaml', icon: '🐫' },
-    { name: 'Rust', icon: '🦀' },
-    { name: 'Dart', icon: '💎' },
-    { name: 'Swift', icon: '🐦' },
-    { name: 'SQL', icon: '🗃️' }
+    { name: 'C', icon: <SiC/> },
+    { name: 'Python', icon: <SiPython /> },
+    { name: 'Java', icon: <BiLogoJava /> },
+    { name: 'JavaScript', icon: <SiJavascript /> },
+    { name: 'TypeScript', icon: <SiTypescript /> },
+    { name: 'HTML/CSS', icon: <SiHtml5 /> },
+    { name: 'OCaml', icon: <SiOcaml /> },
+    { name: 'Rust', icon: <SiRust /> },
+    { name: 'Dart', icon: <SiDart /> },
+    { name: 'Swift', icon: <SiSwift /> },
+    { name: 'SQL', icon: <SiMysql /> }
   ],
   Frameworks: [
-    { name: 'Next.js', icon: '⚛️' },
-    { name: 'TailwindCSS', icon: '💨' },
-    { name: 'Unity', icon: '🎮' },
-    { name: 'Flutter', icon: '📱' },
-    { name: 'Redis', icon: '🔴' },
-    { name: 'Firebase', icon: '🔥' },
-    { name: 'NumPy', icon: '🔢' },
-    { name: 'pandas', icon: '🐼' },
-    { name: 'Matplotlib', icon: '📊' },
-    { name: 'Power BI', icon: '📈' },
-    { name: 'Tableau', icon: '📋' },
-    { name: 'REST API', icon: '🔗' }
+    { name: 'Next.js', icon: <SiNextdotjs /> },
+    { name: 'TailwindCSS', icon: <SiTailwindcss /> },
+    { name: 'Unity', icon: <SiUnity /> },
+    { name: 'Flutter', icon: <SiFlutter /> },
+    { name: 'Redis', icon: <SiRedis /> },
+    { name: 'Firebase', icon: <SiFirebase /> },
+    { name: 'NumPy', icon: <SiNumpy /> },
+    { name: 'pandas', icon: <SiPandas /> },
+    { name: 'Tableau', icon: <SiTableau/> },
   ],
   'Developer Tools': [
-    { name: 'Git', icon: '🌿' },
-    { name: 'MongoDB', icon: '🍃' },
-    { name: 'Docker', icon: '🐳' },
-    { name: 'VS Code', icon: '💻' },
-    { name: 'Visual Studio', icon: '🔵' },
-    { name: 'IntelliJ', icon: '🧠' },
-    { name: 'Eclipse', icon: '🌙' },
-    { name: 'Android Studio', icon: '🤖' },
-    { name: 'Xcode', icon: '🍎' }
+    { name: 'Git', icon: <SiGit /> },
+    { name: 'MongoDB', icon: <SiMongodb /> },
+    { name: 'Docker', icon: <SiDocker /> },
+    { name: 'VS Code', icon: <VscVscode /> },
+    { name: 'Visual Studio', icon: <DiVisualstudio/> },
+    { name: 'IntelliJ', icon: <SiIntellijidea/> },
+    { name: 'Eclipse', icon: <SiEclipseide/> },
+    { name: 'Android Studio', icon: <SiAndroidstudio /> },
+    { name: 'Xcode', icon: <SiXcode/> }
   ]
 };
 
