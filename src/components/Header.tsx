@@ -25,7 +25,7 @@ const Header = () => (
         ))}
         <li>
           <a
-            href="https://drive.google.com/file/d/1Ca9-ANPerPHGi7Vqmd9t25HdUQyzrGoN/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1uXmqtGwefOTK07BiRvo-coxcbSTW7loB/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white font-semibold hover:text-pink-400 transition-colors"

@@ -20,6 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ scrollBehavior: 'smooth'}}>
+      <link rel="icon" href="/favicon.png" sizes="32x32" />
       <body className={workSans.className}>
         <Header />
         <div className="pt-16">{children}</div>

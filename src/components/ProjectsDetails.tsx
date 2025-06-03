@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'SetPlanner.io',
     description: 'Engineered a full-stack web platform that auto-generates DJ setlists based on user-defined genre and artist inputs using AI-driven recommendations.',
-    image: '/set.PNG',
+    image: '/set.png',
     bg: 'bg-gradient-to-br from-indigo-100 to-purple-100',
     tech: [
       { name: 'React', color: 'bg-blue-600' },
@@ -18,7 +18,7 @@ const projects = [
   {
     title: 'Investment Portfolio',
     description: 'Architected a modern full-stack SPA enabling users to track, analyze, and optimize investment portfolios with real-time market data visualization and performance analytics.',
-    image: '/project2.jpg',
+    image: '/port.png',
     bg: 'bg-gradient-to-br from-green-100 to-teal-100',
     tech: [
       { name: 'Angular 16', color: 'bg-green-600' },
@@ -32,7 +32,7 @@ const projects = [
   {
     title: 'Baltimore Ravens Data Analytics Project',
     description: 'Applied statistical modeling and predictive analytics on data for 5,000+ NCAA football players with interactive Power BI and Tableau dashboards.',
-    image: '/project3.jpg',
+    image: '/rave.png',
     bg: 'bg-gradient-to-br from-orange-100 to-pink-100',
     tech: [
       { name: 'Python', color: 'bg-orange-600' },
@@ -46,7 +46,7 @@ const projects = [
   {
     title: 'NFL Play Intelligence System',
     description: 'Engineered an end-to-end data analytics platform that processes 20,000+  NFL play-by-play records to deliver intelligent play-calling recommendations through machine learning.',
-    image: '/project3.jpg',
+    image: '/nfl.png',
     bg: 'bg-gradient-to-br from-green-100 to-yellow-100',
     tech: [
       { name: 'Python', color: 'bg-green-600' },
@@ -66,22 +66,26 @@ const ProjectsDetails = () => (
       <h2 className="text-4xl font-extrabold text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500">
         Projects
       </h2>
-      <p className="text-lg text-gray-400 text-center mb-10">
-        A showcase of my technical projects and applications.
-      </p>
+      <br></br>
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
-          <div key={project.title} className="rounded-xl overflow-hidden shadow-lg bg-[#0a0e17] flex flex-col border border-[#23263a]">
-            <Image src={project.image} alt={project.title} width={400} height={224} className="object-cover w-full h-full" />
-            <div className={`h-56 w-full ${project.bg} flex items-center justify-center`}>
-              {/* Uncomment below and provide real images if available */}
-              {/* <Image src={project.image} alt={project.title} width={400} height={224} className="object-cover w-full h-full" /> */}
+          <div key={project.title} className="rounded-xl overflow-hidden shadow-lg bg-[#0a0e17] flex flex-col border border-[#23263a] hover:border-[#383b52] transition-colors duration-300">
+            {/* Responsive Image Container */}
+            <div className="relative w-full aspect-video bg-gray-900 overflow-hidden">
+              <Image 
+                src={project.image} 
+                alt={project.title} 
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover hover:scale-105 transition-transform duration-300"
+                priority={false}
+              />
             </div>
             {/* Card Content */}
             <div className="p-6 flex flex-col flex-1">
               <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
-              <p className="text-gray-400 text-sm mb-4 flex-1">{project.description}</p>
+              <p className="text-gray-400 text-sm mb-4 flex-1 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map(tech => (
                   <span key={tech.name} className={`px-3 py-1 rounded-full text-white text-xs font-semibold ${tech.color}`}>

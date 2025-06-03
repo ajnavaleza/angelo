@@ -43,29 +43,29 @@ const skillsData = {
 
 const SkillsDetails = () => (
   <section id="skills" className="scroll-mt-16 w-full py-20 px-4 md:px-0 flex flex-col items-center bg-transparent">
-    <div className="max-w-6xl w-full mx-auto">
+    <div className="max-w-full w-full mx-auto px-4">
       {/* Heading */}
       <h2 className="text-4xl font-extrabold text-center mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
         Skills
       </h2>
       
       {/* Skills Categories */}
-      <div className="space-y-12">
+      <div className="space-y-16 max-w-7xl mx-auto">
         {Object.entries(skillsData).map(([category, skills]) => (
           <div key={category}>
             {/* Category Title */}
-            <h3 className="text-2xl font-bold text-center mb-6 text-gray-300">
+            <h3 className="text-3xl font-bold text-center mb-8 text-gray-300">
               {category}
             </h3>
             
             {/* Skills Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
               {skills.map((skill, index) => (
                 <div
                   key={index}
-                  className="bg-[#1a1a1a] rounded-lg p-4 flex flex-col items-center justify-center text-center min-h-[100px] hover:bg-[#2a2a2a] transition-colors shadow-lg border border-gray-800"
+                  className="bg-[#1a1a1a] rounded-lg px-6 py-4 flex flex-col items-center justify-center text-center h-[100px] hover:bg-[#2a2a2a] hover:scale-105 transition-all duration-300 shadow-lg border border-gray-800 hover:border-gray-600"
                 >
-                  <div className="text-2xl mb-2">{skill.icon}</div>
+                  <div className="text-4xl mb-2 text-gray-300 hover:text-white transition-colors duration-300">{skill.icon}</div>
                   <div className="text-white text-sm font-medium">{skill.name}</div>
                 </div>
               ))}
