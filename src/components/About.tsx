@@ -17,7 +17,7 @@ const About = () => (
         />
       </div>
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
-        Hi, I'm <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Angelo.</span>
+        Hi, I&apos;m <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Angelo.</span>
       </h1>
 
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">

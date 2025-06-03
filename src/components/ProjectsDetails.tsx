@@ -57,7 +57,7 @@ const ProjectsDetails = () => (
       </p>
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project, idx) => (
+        {projects.map((project) => (
           <div key={project.title} className="rounded-xl overflow-hidden shadow-lg bg-[#0a0e17] flex flex-col border border-[#23263a]">
             <Image src={project.image} alt={project.title} width={400} height={224} className="object-cover w-full h-full" />
             <div className={`h-56 w-full ${project.bg} flex items-center justify-center`}>

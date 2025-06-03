@@ -1,5 +1,3 @@
-import { Mail } from 'lucide-react';
-
 const navLinks = [
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
