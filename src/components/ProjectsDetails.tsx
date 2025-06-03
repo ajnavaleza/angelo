@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'SetPlanner.io',
     description: 'Engineered a full-stack web platform that auto-generates DJ setlists based on user-defined genre and artist inputs using AI-driven recommendations.',
-    image: '/set.png',
+    image: '/set.PNG',
     bg: 'bg-gradient-to-br from-indigo-100 to-purple-100',
     tech: [
       { name: 'React', color: 'bg-blue-600' },
@@ -18,7 +18,7 @@ const projects = [
   {
     title: 'Investment Portfolio',
     description: 'Architected a modern full-stack SPA enabling users to track, analyze, and optimize investment portfolios with real-time market data visualization and performance analytics.',
-    image: '/port.png',
+    image: '/port.PNG',
     bg: 'bg-gradient-to-br from-green-100 to-teal-100',
     tech: [
       { name: 'Angular 16', color: 'bg-green-600' },
@@ -32,7 +32,7 @@ const projects = [
   {
     title: 'Baltimore Ravens Data Analytics Project',
     description: 'Applied statistical modeling and predictive analytics on data for 5,000+ NCAA football players with interactive Power BI and Tableau dashboards.',
-    image: '/rave.png',
+    image: '/rave.PNG',
     bg: 'bg-gradient-to-br from-orange-100 to-pink-100',
     tech: [
       { name: 'Python', color: 'bg-orange-600' },
@@ -46,7 +46,7 @@ const projects = [
   {
     title: 'NFL Play Intelligence System',
     description: 'Engineered an end-to-end data analytics platform that processes 20,000+  NFL play-by-play records to deliver intelligent play-calling recommendations through machine learning.',
-    image: '/nfl.png',
+    image: '/nfl.PNG',
     bg: 'bg-gradient-to-br from-green-100 to-yellow-100',
     tech: [
       { name: 'Python', color: 'bg-green-600' },
