@@ -62,7 +62,7 @@ const About = () => (
       <br></br>
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
         <a
-          href="https://drive.google.com/file/d/1nUwCYxzNlTv2WN5ujiWzYvAg9BQev_b2/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1Ca9-ANPerPHGi7Vqmd9t25HdUQyzrGoN/view?usp=drive_link"
           download
           className="flex items-center justify-center px-6 py-3 sm:px-8 sm:py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-md hover:opacity-90 transition-opacity duration-200"
         >
