@@ -3,6 +3,7 @@ import About from "../components/About";
 import Skills from "../components/SkillsDetails";
 import Experience from "../components/ExperienceDetails";
 import Projects from "../components/ProjectsDetails";
+import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Skills/>
       <Experience/>
       <Projects/>
+      <Analytics />
     </main>
   );
 }
