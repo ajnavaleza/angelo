@@ -11,7 +11,7 @@ const experiences = [
       '• Implemented machine learning models for player performance prediction',
       '• Collaborated with analytics team to optimize player scouting processes'
     ],
-    date: 'May 2023 - August 2023',
+    date: 'September 2024 - November 2024',
     logo: '/ravens.jpg',
     logoType: 'image',
     bgColor: 'bg-purple-800',
@@ -26,7 +26,7 @@ const experiences = [
       '• Containerized Node.js services with Docker and deployed on Amazon ECS; defined infrastructure via Terraform for reproducible environments.',
       '• Enhanced platform scalability and performance by integrating asynchronous event-driven workflows with Amazon SQS and Lambda, reducing response latency for critical user actions by 40%.'
     ],
-    date: 'Sep 2024 - Nov 2024',
+    date: 'June 2024 - August 2024',
     logo: 'H',
     logoType: 'text',
     bgColor: 'bg-orange-500',
