@@ -56,6 +56,20 @@ const projects = [
     ],
     github: 'https://github.com/ajnavaleza/nfl-play-ML',
     external: 'https://nfl-play-predictor.streamlit.app/',
+  },
+  {
+    title: 'PokeVault',
+    description: 'Developed a web application that allows users to search for Pokémon, view their details, and manage their collection of Pokémon cards.',
+    image: '/poke.PNG',
+    bg: 'bg-gradient-to-br from-red-100 to-blue-100',
+    tech: [
+      { name: 'HTML', color: 'bg-red-600' },
+      { name: 'CSS', color: 'bg-red-400' },
+      { name: 'JavaScript', color: 'bg-blue-700' },
+      { name: 'PokeAPI', color: 'bg-blue-400' },
+    ],
+    github: 'https://github.com/ajnavaleza/PokeVault',
+    external: 'https://p0ke-vault.vercel.app/',
   }
 ];
 
