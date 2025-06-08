@@ -10,7 +10,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Angelo's Portfolio", 
+  title: "Angelo Navaleza", 
   description: "Angelo Navaleza's Portfolio",
 };
 
