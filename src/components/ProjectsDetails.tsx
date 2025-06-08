@@ -19,7 +19,6 @@ const projects = [
     ],
     github: 'https://github.com/ajnavaleza/SetPlanner.io',
     external: 'https://set-planner-io.vercel.app/',
-    status: 'Live'
   },
   {
     title: 'Investment Portfolio',
@@ -33,7 +32,6 @@ const projects = [
     ],
     github: 'https://github.com/ajnavaleza/InvestmentPortfolio',
     external: 'https://investment-portfolio-ten.vercel.app/',
-    status: 'Live'
   },
   {
     title: 'Baltimore Ravens Data Analytics Project',
@@ -47,7 +45,6 @@ const projects = [
     ],
     github: 'https://github.com/arbaji22/ravensproject.github.io',
     external: 'https://arbaji22.github.io/arbaji.github.io/',
-    status: 'Live'
   },
   {
     title: 'NFL Play Intelligence System',
@@ -61,7 +58,6 @@ const projects = [
     ],
     github: 'https://github.com/ajnavaleza/nfl-play-ML',
     external: 'https://nfl-play-predictor.streamlit.app/',
-    status: 'Live'
   },
   {
     title: 'PokeVault',
@@ -75,7 +71,6 @@ const projects = [
     ],
     github: 'https://github.com/ajnavaleza/PokeVault',
     external: 'https://p0ke-vault.vercel.app/',
-    status: 'Live'
   }
 ];
 
@@ -116,12 +111,6 @@ const ProjectsDetails = () => {
                     priority={false}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <Badge 
-                    className="absolute top-4 right-4 bg-green-500 hover:bg-green-600 text-white font-semibold"
-                    variant="secondary"
-                  >
-                    {project.status}
-                  </Badge>
                 </div>
               
               <div className="p-6">
