@@ -3,13 +3,13 @@ import About from "../components/About";
 import Skills from "../components/SkillsDetails";
 import Experience from "../components/ExperienceDetails";
 import Projects from "../components/ProjectsDetails";
-import FloatingElements from "../components/FloatingElements";
+import CursorGradient from "../components/CursorGradient";
 import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   return (
-    <main className="bg-gray-900 text-white font-sans relative">
-      <FloatingElements />
+    <main className="bg-gradient-to-br from-gray-900/95 via-slate-900/90 to-gray-900/95 text-white font-sans relative min-h-screen">
+      <CursorGradient />
       <div className="relative z-10">
         <About/>
         <Skills/>
