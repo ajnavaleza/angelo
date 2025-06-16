@@ -97,7 +97,7 @@ const About = () => {
             className="action-button bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 opacity-0"
             size="lg"
           >
-            <a href="https://drive.google.com/file/d/1uXmqtGwefOTK07BiRvo-coxcbSTW7loB/view?usp=sharing" download>
+            <a href="https://drive.google.com/file/d/1_mywk4tUybBwOSKijKHy4V6laR3hWbh8/view?usp=sharing" download>
               <Download size={20} className="mr-2" />
               Download CV
             </a>
