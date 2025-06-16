@@ -12,10 +12,9 @@ const experiences = [
     position: 'Data Analytics Intern',
     location: 'Baltimore, MD',
     description: [
-      '• Applied statistical modeling and predictive analytics on data for 5,000+ NCAA football players',
-      '• Created interactive Power BI and Tableau dashboards for data visualization',
-      '• Implemented machine learning models for player performance prediction',
-      '• Collaborated with analytics team to optimize player scouting processes'
+      '• Performed statistical analysis and built predictive models on datasets of over 5,000 NCAA football players to support data-informed scouting evaluations for the 2025 NFL Draft.',
+      '• Embedded interactive Power BI and Tableau dashboards into an internal platform accessed by 20+ scouting staff, enabling comparative analysis of player metrics.',
+      '• Automated weekly Python workflows to clean and process 50,000+ new data points, reducing time spent on manual data handling by approximately 10 hours per week.',
     ],
     date: 'September 2024 - November 2024',
     logo: '/ravens.jpg',
@@ -29,9 +28,9 @@ const experiences = [
     position: 'Software Development Intern',
     location: 'College Park, MD',
     description: [
-      '• Implemented serverless Python microservices on AWS Lambda with API Gateway to support real-time household management features.',
-      '• Containerized Node.js services with Docker and deployed on Amazon ECS; defined infrastructure via Terraform for reproducible environments.',
-      '• Enhanced platform scalability and performance by integrating asynchronous event-driven workflows with Amazon SQS and Lambda, reducing response latency for critical user actions by 40%.'
+      '• Built and deployed Python-based microservices using AWS Lambda and API Gateway to support real-time features for roommate task coordination.',
+      '• Dockerized Node.js services and launched them on Amazon ECS; used Terraform to manage scalable infrastructure and automate deployments.',
+      '• Optimized app responsiveness by integrating Amazon SQS and event-driven workflows, improving latency by 30\% during high traffic events.'
     ],
     date: 'June 2024 - August 2024',
     logo: '/shell.png',
