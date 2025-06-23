@@ -1,5 +1,6 @@
 // components/SectionWrapper.tsx
 import React from "react";
+import styles from '../styles/SectionWrapper.module.css';
 
 type Props = {
   id: string;
@@ -8,8 +9,8 @@ type Props = {
 };
 
 const SectionWrapper: React.FC<Props> = ({ id, title, children }) => (
-  <section id={id} className={`${id === 'about' ? 'py-1' : 'py-12'} px-6 md:px-12 max-w-6xl mx-auto`}>
-    <h2 className="text-3xl font-bold mb-8 text-center">{title}</h2>
+  <section id={id} className={id === 'about' ? styles.sectionAbout : styles.sectionDefault}>
+    <h2 className={styles.sectionTitle}>{title}</h2>
     {children}
   </section>
 );

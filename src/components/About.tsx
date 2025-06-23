@@ -9,6 +9,8 @@ import { useAnimations, useIntersectionAnimation } from '../hooks/useAnimations'
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import styles from '../styles/About.module.css';
+import { RESUME_LINK } from '../config/resume';
 
 const TypingText = ({ text, speed = 100, delay = 0 }: { text: string; speed?: number; delay?: number }) => {
   const [displayText, setDisplayText] = useState('');
@@ -61,89 +63,82 @@ const About = () => {
 
   return (
     <SectionWrapper id="about" title="">
-      <div ref={ref as React.RefObject<HTMLDivElement>} className="container mx-auto px-4 py-2 text-center">
-        <Card className="profile-image border-0 bg-transparent shadow-none opacity-0 max-w-fit mx-auto mb-6">
-          <CardContent className="p-0">
-            <div className="relative">
+      <div ref={ref as React.RefObject<HTMLDivElement>} className={styles.aboutContainer}>
+        <Card className={`${styles.profileImage} profile-image`}>
+          <CardContent className={styles.profileImageContent}>
+            <div className={styles.profileImageWrapper}>
               <Image
                 src="/web.jpg"
                 alt="Angelo"
                 width={400}
                 height={400}
-                className="rounded-full shadow-2xl object-cover border-4 border-gradient-to-r from-purple-500 to-pink-500"
+                className={styles.profileImagePic}
                 priority
               />
             </div>
           </CardContent>
         </Card>
 
-        <h1 className="main-title text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white opacity-0">
-          Hi, I&apos;m {" "} 
-          <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-             Angelo.
-          </span>
+        <h1 className={`${styles.mainTitle} main-title`}>
+          Hi, I&apos;m {" "}
+          <span className={styles.nameGradient}>Angelo.</span>
         </h1>
 
-        <h1 className="typing-title text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white opacity-0">
+        <h1 className={`${styles.typingTitle} typing-title`}>
           <TypingText text="CS @ University of Maryland" speed={100} />
-          <span className="animate-pulse">|</span>
+          <span className={styles.typingCursor}>|</span>
         </h1>
 
-        <Separator className="my-8 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent h-px" />
-        
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
-          <Button 
+        <Separator className={styles.separator} />
+
+        <div className={styles.actionButtons}>
+          <Button
             asChild
-            className="action-button bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 opacity-0"
+            className={`${styles.downloadButton} action-button`}
             size="lg"
           >
-            <a href="https://drive.google.com/file/d/1_mywk4tUybBwOSKijKHy4V6laR3hWbh8/view?usp=sharing" download>
-              <Download size={20} className="mr-2" />
+            <a href={RESUME_LINK} download>
+              <Download size={20} className={styles.downloadIcon} />
               Download CV
             </a>
           </Button>
-          
-          <Button 
+          <Button
             asChild
             variant="outline"
-            className="action-button border-gray-600 hover:border-purple-500 hover:bg-purple-500/10 hover:text-purple-500 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 opacity-0"
+            className={`${styles.viewWorkButton} action-button`}
             size="lg"
           >
-            <a href="#projects">
-              View My Work
-            </a>
+            <a href="#projects">View My Work</a>
           </Button>
         </div>
 
-        <Separator className="my-8 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent h-px" />
-        
-        <div className="flex justify-center items-center space-x-12">
+        <Separator className={styles.separator} />
+
+        <div className={styles.socialIcons}>
           <Button
             variant="ghost"
             size="icon"
-            className="social-icon text-gray-400 hover:text-pink-500 transition-all duration-300 hover:scale-125 opacity-0 h-24 w-24"
+            className={`${styles.socialIcon} social-icon`}
             asChild
           >
             <a href="https://github.com/ajnavaleza" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
               <Github style={{ width: '2rem', height: '2rem' }} />
             </a>
           </Button>
-
           <Button
             variant="ghost"
             size="icon"
-            className="social-icon text-gray-400 hover:text-pink-500 transition-all duration-300 hover:scale-125 opacity-0 h-24 w-24"
+            className={`${styles.socialIcon} social-icon`}
             asChild
           >
             <a href="https://linkedin.com/in/angelo-navaleza" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
               <Linkedin style={{ width: '2rem', height: '2rem' }} />
             </a>
           </Button>
-
           <Button
             variant="ghost"
             size="icon"
-            className="social-icon text-gray-400 hover:text-pink-500 transition-all duration-300 hover:scale-125 opacity-0 h-24 w-24"
+            className={`${styles.socialIcon} social-icon`}
             asChild
           >
             <a href="mailto:aj.navaleza@gmail.com" aria-label="Email Me">

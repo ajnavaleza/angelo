@@ -1,0 +1,156 @@
+.projectsSection {
+  scroll-margin-top: 4rem;
+  width: 100%;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+}
+
+.projectsContainer {
+  max-width: 96rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projectsTitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #ec4899, #ef4444);
+  opacity: 0;
+}
+
+.projectsSeparator {
+  margin: 2rem 0;
+  background: linear-gradient(to right, transparent, #ec489980, transparent);
+  height: 1px;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 640px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .projectsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.projectCard {
+  background: linear-gradient(to bottom right, #0f172acc 80%, #1e293bcc 80%);
+  border: 1px solid #334155;
+  transition: all 0.5s;
+  box-shadow: 0 8px 40px 0 #ec48991a;
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+.projectCard:hover {
+  border-color: #7c3aed80;
+  box-shadow: 0 16px 48px 0 #7c3aed20;
+  transform: scale(1.05);
+}
+
+.projectImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #18181b;
+  overflow: hidden;
+}
+.projectImage {
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.projectCard:hover .projectImage {
+  transform: scale(1.1);
+}
+.projectImageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #00000080, transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.projectCard:hover .projectImageOverlay {
+  opacity: 1;
+}
+
+.projectContent {
+  padding: 1.5rem;
+}
+.projectTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  transition: color 0.3s;
+}
+.projectCard:hover .projectTitle {
+  color: #a78bfa;
+}
+.projectDescription {
+  color: #a3a3a3;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.projectTechList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.projectTechBadge {
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.projectTechBadge:hover {
+  transform: scale(1.1);
+}
+
+.projectActions {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+.projectCodeButton {
+  flex: 1;
+  border: 1px solid #475569;
+  color: #a78bfa;
+  background: transparent;
+  transition: all 0.3s;
+}
+.projectCodeButton:hover {
+  border-color: #7c3aed;
+  background: #7c3aed1a;
+  color: #7c3aed;
+}
+.projectDemoButton {
+  flex: 1;
+  background: linear-gradient(to right, #7c3aed, #ec4899);
+  color: #fff;
+  transition: background 0.3s;
+}
+.projectDemoButton:hover {
+  background: linear-gradient(to right, #4c1d95, #7c3aed);
+}
+.projectActionIcon {
+  margin-right: 0.5rem;
+} 

@@ -1,0 +1,156 @@
+.experienceSection {
+  scroll-margin-top: 4rem;
+  width: 100%;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+}
+
+.experienceContainer {
+  max-width: 64rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.experienceTitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #60a5fa, #7c3aed);
+  opacity: 0;
+}
+
+.experienceSeparator {
+  margin: 2rem 0;
+  background: linear-gradient(to right, transparent, #60a5fa80, transparent);
+  height: 1px;
+}
+
+.timelineWrapper {
+  position: relative;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #7c3aed, #60a5fa);
+  opacity: 0;
+}
+
+.experienceItems {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experienceItem {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  opacity: 0;
+}
+
+.timelineAvatarWrapper {
+  flex-shrink: 0;
+  z-index: 10;
+}
+.timelineAvatar {
+  width: 4rem;
+  height: 4rem;
+  border: 4px solid var(--background, #18181b);
+  box-shadow: 0 4px 16px 0 #00000033;
+  transition: transform 0.3s;
+}
+.timelineAvatar:hover {
+  transform: scale(1.1);
+}
+.timelineAvatarImage {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.timelineAvatarFallback {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.experienceCard {
+  margin-left: 2rem;
+  flex: 1;
+  background: linear-gradient(to bottom right, #0f172aCC 80%, #1e293bCC 80%);
+  border: 1px solid #334155;
+  transition: all 0.3s;
+  box-shadow: 0 4px 24px 0 #7c3aed1a;
+}
+.experienceCard:hover {
+  border-color: #7c3aed80;
+  box-shadow: 0 8px 32px 0 #7c3aed20;
+}
+
+.experienceCardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 640px) {
+  .experienceCardHeader {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.experienceCardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s;
+}
+.experienceCard:hover .experienceCardTitle {
+  color: #a78bfa;
+}
+.experienceTypeBadge {
+  background: #7c3aed33;
+  color: #a78bfa;
+  border: 1px solid #7c3aed4d;
+  transition: background 0.3s;
+  width: fit-content;
+}
+.experienceTypeBadge:hover {
+  background: #7c3aed4d;
+}
+.experienceCompany {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #d1d5db;
+}
+.experienceDateBadge {
+  color: #60a5fa;
+  border: 1px solid #60a5fa80;
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+.experienceDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.experienceDescriptionItem {
+  color: #d1d5db;
+  transition: color 0.2s;
+  line-height: 1.6;
+}
+.experienceDescriptionItem:hover {
+  color: #fff;
+} 

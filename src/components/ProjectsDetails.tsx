@@ -6,6 +6,7 @@ import { useAnimations, useIntersectionAnimation } from '../hooks/useAnimations'
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import styles from '../styles/ProjectsDetails.module.css';
 
 const projects = [
     {
@@ -88,44 +89,34 @@ const ProjectsDetails = () => {
   const ref = useIntersectionAnimation(animateProjects);
 
   return (
-    <section ref={ref as React.RefObject<HTMLElement>} id="projects" className="scroll-mt-16 w-full py-20 px-4 md:px-0 flex flex-col items-center bg-transparent">
-      <div className="max-w-6xl w-full mx-auto">
+    <section ref={ref as React.RefObject<HTMLElement>} id="projects" className={styles.projectsSection}>
+      <div className={styles.projectsContainer}>
         {/* Heading */}
-        <h2 className="projects-title text-4xl font-extrabold text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500 opacity-0">
-          Projects
-        </h2>
-        
-        <Separator className="my-8 bg-gradient-to-r from-transparent via-pink-500/50 to-transparent h-px" />
-        
+        <h2 className={`${styles.projectsTitle} projects-title`}>Projects</h2>
+        <Separator className={styles.projectsSeparator} />
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className={styles.projectsGrid}>
           {projects.map((project) => (
-            <div key={project.title} className="project-card group bg-gradient-to-br from-gray-900/80 to-gray-800/80 border border-gray-700 hover:border-purple-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 opacity-0 overflow-hidden rounded-lg">
-              <div className="relative w-full aspect-video bg-gray-900 overflow-hidden">
-                  <Image 
-                    src={project.image} 
-                    alt={project.title} 
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    priority={false}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
+            <div key={project.title} className={`${styles.projectCard} project-card`}>
+              <div className={styles.projectImageWrapper}>
+                <Image 
+                  src={project.image} 
+                  alt={project.title} 
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className={styles.projectImage}
+                  priority={false}
+                />
+                <div className={styles.projectImageOverlay} />
+              </div>
+              <div className={styles.projectContent}>
+                <h3 className={styles.projectTitle}>{project.title}</h3>
+                <p className={styles.projectDescription}>{project.description}</p>
+                <div className={styles.projectTechList}>
                   {project.tech.map(tech => (
                     <Badge 
                       key={tech.name}
-                      className={`${tech.color} hover:scale-110 transition-transform duration-200 text-white font-semibold cursor-pointer`}
+                      className={`${styles.projectTechBadge} ${tech.color}`}
                       variant="secondary"
                     >
                       {tech.name}
@@ -133,27 +124,25 @@ const ProjectsDetails = () => {
                   ))}
                 </div>
               </div>
-
-              <div className="p-6 pt-0 flex gap-4">
+              <div className={styles.projectActions}>
                 <Button
                   variant="outline"
                   size="sm"
-                  className="flex-1 border-gray-600 hover:border-purple-500 hover:bg-purple-500/10 hover:text-purple-400"
+                  className={styles.projectCodeButton}
                   asChild
                 >
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Github size={16} className="mr-2" />
+                    <Github size={16} className={styles.projectActionIcon} />
                     Code
                   </a>
                 </Button>
-
                 <Button
                   size="sm"
-                  className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
+                  className={styles.projectDemoButton}
                   asChild
                 >
                   <a href={project.external} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink size={16} className="mr-2" />
+                    <ExternalLink size={16} className={styles.projectActionIcon} />
                     Live Demo
                   </a>
                 </Button>

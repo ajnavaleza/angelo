@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useAnimations } from '../hooks/useAnimations';
 import { Button } from '@/components/ui/button';
+import styles from '../styles/Header.module.css';
+import { RESUME_LINK } from '../config/resume';
 
 const navLinks = [
   { name: 'Skills', href: '#skills' },
@@ -21,40 +23,39 @@ const Header = () => {
   }, [slideIn, staggerAnimation]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#090c1a]/95 backdrop-blur border-b border-[#181c2a] shadow-lg">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+    <header className={styles.header}>
+      <nav className={styles.navbar}>
         {/* Logo */}
         <a
           href="#about"
-          className="header-logo text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 opacity-0"
+          className={`${styles.logo} header-logo`}
         >
           Angelo Navaleza
         </a>
-
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className={styles.desktopNav}>
           {navLinks.map(link => (
-            <li key={link.name} className="nav-item opacity-0">
+            <li key={link.name} className={`nav-item ${styles.navItem}`}>
               <Button
                 variant="ghost"
-                className="text-white font-semibold hover:text-pink-400 transition-all duration-300 hover:scale-110 relative group p-2"
+                className={styles.navButton}
                 asChild
               >
                 <a href={link.href}>
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
+                  <span className={styles.navUnderline}></span>
                 </a>
               </Button>
             </li>
           ))}
-          <li className="nav-item opacity-0">
+          <li className={`nav-item ${styles.navItem}`}>
             <Button
               variant="outline"
-              className="text-white font-semibold hover:text-pink-400 transition-all duration-300 hover:scale-110 border-purple-500/50 hover:border-purple-500 hover:shadow-purple-500/20 hover:shadow-lg"
+              className={styles.resumeButton}
               asChild
             >
               <a
-                href="https://drive.google.com/file/d/1_mywk4tUybBwOSKijKHy4V6laR3hWbh8/view?usp=sharing"
+                href={RESUME_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -63,28 +64,26 @@ const Header = () => {
             </Button>
           </li>
         </ul>
-
         {/* Mobile Hamburger */}
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden text-white hover:text-purple-400 transition-colors duration-300 hover:scale-110"
+          className={styles.mobileMenuButton}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </Button>
       </nav>
-
       {/* Mobile Menu Snackbar */}
       {isOpen && (
-        <div className="md:hidden bg-[#090c1a]/95 border-t border-[#181c2a] px-6 py-4 animate-fade-in">
-          <ul className="flex flex-col gap-4">
+        <div className={styles.mobileMenu}>
+          <ul className={styles.mobileMenuList}>
             {navLinks.map(link => (
               <li key={link.name}>
                 <Button
                   variant="ghost"
-                  className="w-full justify-start text-white font-semibold hover:text-pink-400 transition-all duration-300 hover:translate-x-2"
+                  className={styles.mobileNavButton}
                   onClick={() => setIsOpen(false)}
                   asChild
                 >
@@ -97,12 +96,12 @@ const Header = () => {
             <li>
               <Button
                 variant="outline"
-                className="w-full text-white font-semibold hover:text-pink-400 transition-all duration-300 border-purple-500/50 hover:border-purple-500"
+                className={styles.mobileResumeButton}
                 onClick={() => setIsOpen(false)}
                 asChild
               >
                 <a
-                  href="https://drive.google.com/file/d/1uXmqtGwefOTK07BiRvo-coxcbSTW7loB/view?usp=sharing"
+                  href={RESUME_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

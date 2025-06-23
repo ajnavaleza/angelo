@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   return (
-    <main className="bg-gradient-to-br from-gray-900/95 via-slate-900/90 to-gray-900/95 text-white font-sans relative min-h-screen">
+    <main className="text-white font-sans relative min-h-screen">
       <CursorGradient />
       <div className="relative z-10">
         <About/>
