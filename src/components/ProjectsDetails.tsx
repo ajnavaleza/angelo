@@ -8,32 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 
 const projects = [
-  {
-    title: 'SetPlanner.io',
-    description: 'Engineered a full-stack web platform that auto-generates DJ setlists based on user-defined genre and artist inputs using AI-driven recommendations.',
-    image: '/set.PNG',
-    tech: [
-      { name: 'React', color: 'bg-blue-500' },
-      { name: 'Next.js', color: 'bg-purple-500' },
-      { name: 'Spotify API', color: 'bg-green-500' },
-    ],
-    github: 'https://github.com/ajnavaleza/SetPlanner.io',
-    external: 'https://set-planner-io.vercel.app/',
-  },
-  {
-    title: 'Investment Portfolio',
-    description: 'Architected a modern full-stack SPA enabling users to track, analyze, and optimize investment portfolios with real-time market data visualization and performance analytics.',
-    image: '/port.PNG',
-    tech: [
-      { name: 'Angular 16', color: 'bg-red-500' },
-      { name: 'TypeScript', color: 'bg-blue-500' },
-      { name: 'Firebase', color: 'bg-orange-500' },
-      { name: 'Alpha Vantage API', color: 'bg-purple-500' },
-    ],
-    github: 'https://github.com/ajnavaleza/InvestmentPortfolio',
-    external: 'https://investment-portfolio-ten.vercel.app/',
-  },
-  {
+    {
     title: 'Baltimore Ravens Data Analytics Project',
     description: 'Applied statistical modeling and predictive analytics on data for 5,000+ NCAA football players with interactive Power BI and Tableau dashboards.',
     image: '/rave.PNG',
@@ -45,6 +20,18 @@ const projects = [
     ],
     github: 'https://github.com/arbaji22/ravensproject.github.io',
     external: 'https://arbaji22.github.io/arbaji.github.io/',
+  },
+  {
+    title: 'SetPlanner.io',
+    description: 'Engineered a full-stack web platform that auto-generates DJ setlists based on user-defined genre and artist inputs using AI-driven recommendations.',
+    image: '/set.PNG',
+    tech: [
+      { name: 'React', color: 'bg-blue-500' },
+      { name: 'Next.js', color: 'bg-purple-500' },
+      { name: 'Spotify API', color: 'bg-green-500' },
+    ],
+    github: 'https://github.com/ajnavaleza/SetPlanner.io',
+    external: 'https://set-planner-io.vercel.app/',
   },
   {
     title: 'NFL Play Intelligence System',
@@ -71,6 +58,19 @@ const projects = [
     ],
     github: 'https://github.com/ajnavaleza/PokeVault',
     external: 'https://p0ke-vault.vercel.app/',
+  },
+  {
+    title: 'Investment Portfolio',
+    description: 'Architected a modern full-stack SPA enabling users to track, analyze, and optimize investment portfolios with real-time market data visualization and performance analytics.',
+    image: '/port.PNG',
+    tech: [
+      { name: 'Angular 16', color: 'bg-red-500' },
+      { name: 'TypeScript', color: 'bg-blue-500' },
+      { name: 'Firebase', color: 'bg-orange-500' },
+      { name: 'Alpha Vantage API', color: 'bg-purple-500' },
+    ],
+    github: 'https://github.com/ajnavaleza/InvestmentPortfolio',
+    external: 'https://investment-portfolio-ten.vercel.app/',
   }
 ];
 
