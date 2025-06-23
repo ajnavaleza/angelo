@@ -45,7 +45,7 @@ const projects = [
       { name: 'XGBoost', color: 'bg-green-500' }
     ],
     github: 'https://github.com/ajnavaleza/nfl-play-ML',
-    external: 'https://nfl-play-predictor.streamlit.app/',
+    external: 'https://nfl-play-ml.streamlit.app/',
   },
   {
     title: 'PokeVault',
