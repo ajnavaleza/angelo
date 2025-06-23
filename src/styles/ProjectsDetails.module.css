@@ -15,15 +15,13 @@
 }
 
 .projectsTitle {
-  font-size: 2.25rem;
-  font-weight: 800;
+  color: var(--text-accent);
+  font-size: 2.75rem;
+  font-weight: 900;
+  letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 0.5rem;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #ec4899, #ef4444);
-  opacity: 0;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 2px 16px var(--background)60;
 }
 
 .projectsSeparator {
@@ -36,32 +34,37 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  align-items: stretch;
 }
 @media (min-width: 640px) {
   .projectsGrid {
     grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
   }
 }
 @media (min-width: 1024px) {
   .projectsGrid {
     grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
   }
 }
 
 .projectCard {
-  background: linear-gradient(to bottom right, #0f172acc 80%, #1e293bcc 80%);
-  border: 1px solid #334155;
+  background: #1e2d30;
+  border: 1.5px solid rgba(255,255,255,0.04);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.08);
   transition: all 0.5s;
-  box-shadow: 0 8px 40px 0 #ec48991a;
   opacity: 0;
   overflow: hidden;
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  padding-bottom: 1.5rem;
 }
 .projectCard:hover {
-  border-color: #7c3aed80;
-  box-shadow: 0 16px 48px 0 #7c3aed20;
+  border-color: rgba(255,255,255,0.10);
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
   transform: scale(1.05);
 }
 
@@ -96,15 +99,15 @@
 .projectTitle {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #fff;
+  color: var(--text-accent);
   margin-bottom: 0.75rem;
   transition: color 0.3s;
 }
 .projectCard:hover .projectTitle {
-  color: #a78bfa;
+  color: var(--text-accent);
 }
 .projectDescription {
-  color: #a3a3a3;
+  color: var(--text-accent);
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -117,7 +120,7 @@
 }
 .projectTechBadge {
   font-weight: 600;
-  color: #fff;
+  color: var(--text-accent);
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -129,27 +132,29 @@
   padding: 1.5rem 1.5rem 0 1.5rem;
   display: flex;
   gap: 1rem;
+  margin-top: auto;
 }
 .projectCodeButton {
   flex: 1;
-  border: 1px solid #475569;
-  color: #a78bfa;
+  border: 1px solid var(--text-accent);
+  color: var(--text-accent);
   background: transparent;
   transition: all 0.3s;
 }
 .projectCodeButton:hover {
-  border-color: #7c3aed;
-  background: #7c3aed1a;
-  color: #7c3aed;
+  border-color: var(--text-accent);
+  background: var(--text-accent)20;
+  color: var(--text-accent);
 }
 .projectDemoButton {
   flex: 1;
-  background: linear-gradient(to right, #7c3aed, #ec4899);
-  color: #fff;
+  background: linear-gradient(to right, var(--text-accent), var(--text-accent));
+  color: #061C36;
   transition: background 0.3s;
 }
 .projectDemoButton:hover {
-  background: linear-gradient(to right, #4c1d95, #7c3aed);
+  background: linear-gradient(to right, #085A24, var(--text-accent));
+  color: var(--text-accent);
 }
 .projectActionIcon {
   margin-right: 0.5rem;

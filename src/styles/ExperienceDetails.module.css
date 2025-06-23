@@ -15,20 +15,18 @@
 }
 
 .experienceTitle {
-  font-size: 2.25rem;
-  font-weight: 800;
+  color: var(--text-accent);
+  font-size: 2.75rem;
+  font-weight: 900;
+  letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 0.5rem;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #60a5fa, #7c3aed);
-  opacity: 0;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 2px 16px var(--background)60;
 }
 
 .experienceSeparator {
   margin: 2rem 0;
-  background: linear-gradient(to right, transparent, #60a5fa80, transparent);
+  background: linear-gradient(to right, transparent, #2A5D8580, transparent);
   height: 1px;
 }
 
@@ -42,7 +40,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, #7c3aed, #60a5fa);
+  background: linear-gradient(to bottom, var(--text-accent), #085A24);
   opacity: 0;
 }
 
@@ -87,14 +85,14 @@
 .experienceCard {
   margin-left: 2rem;
   flex: 1;
-  background: linear-gradient(to bottom right, #0f172aCC 80%, #1e293bCC 80%);
-  border: 1px solid #334155;
+  background: #1e2d30;
+  border: 1.5px solid rgba(255,255,255,0.04);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.08);
   transition: all 0.3s;
-  box-shadow: 0 4px 24px 0 #7c3aed1a;
 }
 .experienceCard:hover {
-  border-color: #7c3aed80;
-  box-shadow: 0 8px 32px 0 #7c3aed20;
+  border-color: rgba(255,255,255,0.10);
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
 }
 
 .experienceCardHeader {
@@ -114,30 +112,30 @@
 .experienceCardTitle {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #fff;
+  color: var(--text-accent);
   transition: color 0.3s;
 }
 .experienceCard:hover .experienceCardTitle {
-  color: #a78bfa;
+  color: var(--text-accent);
 }
 .experienceTypeBadge {
-  background: #7c3aed33;
-  color: #a78bfa;
-  border: 1px solid #7c3aed4d;
+  background: #2A5D8533;
+  color: var(--text-accent);
+  border: 1px solid #2A5D854D;
   transition: background 0.3s;
   width: fit-content;
 }
 .experienceTypeBadge:hover {
-  background: #7c3aed4d;
+  background: #2A5D854D;
 }
 .experienceCompany {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #d1d5db;
+  color: var(--text-accent);
 }
 .experienceDateBadge {
-  color: #60a5fa;
-  border: 1px solid #60a5fa80;
+  color: var(--text-accent);
+  border: 1px solid #2A5D8580;
   margin-top: 0.5rem;
   width: fit-content;
 }
@@ -147,10 +145,11 @@
   gap: 0.5rem;
 }
 .experienceDescriptionItem {
-  color: #d1d5db;
+  color: var(--text-accent);
   transition: color 0.2s;
   line-height: 1.6;
 }
 .experienceDescriptionItem:hover {
-  color: #fff;
+  color: var(--text-accent);
+  text-shadow: 0 2px 8px #2A5D8520;
 } 

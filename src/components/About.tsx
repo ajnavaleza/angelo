@@ -1,8 +1,6 @@
 'use client';
 
-// components/About.tsx
 import { Download, Github, Linkedin, Mail } from 'lucide-react';
-import SectionWrapper from "./SectionWrapper";
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useAnimations, useIntersectionAnimation } from '../hooks/useAnimations';
@@ -62,7 +60,7 @@ const About = () => {
   const ref = useIntersectionAnimation(animateElements);
 
   return (
-    <SectionWrapper id="about" title="">
+    <section id="about">
       <div ref={ref as React.RefObject<HTMLDivElement>} className={styles.aboutContainer}>
         <Card className={`${styles.profileImage} profile-image`}>
           <CardContent className={styles.profileImageContent}>
@@ -147,7 +145,7 @@ const About = () => {
           </Button>
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   );
 };
 

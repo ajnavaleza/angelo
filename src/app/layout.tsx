@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
+import { Overpass } from "next/font/google";
 import "../globals.css";
 import "../styles/animations.css";
 import Header from "../components/Header";
 
-const workSans = Work_Sans({
+const overpass = Overpass({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-overpass",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" style={{ scrollBehavior: 'smooth'}}>
       <link rel="icon" href="/favicon.png" sizes="32x32" />
-      <body className={workSans.className}>
+      <body className={overpass.className}>
         <Header />
         <div className="pt-16">{children}</div>
         {/* Fallback smooth scroll script */}

@@ -16,20 +16,18 @@
 }
 
 .skillsTitle {
-  font-size: 2.25rem;
-  font-weight: 800;
+  color: var(--foreground);
+  font-size: 2.75rem;
+  font-weight: 900;
+  letter-spacing: 1px;
   text-align: center;
   margin-bottom: 2.5rem;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #4c1d95, #7c3aed);
-  opacity: 0;
+  text-shadow: 0 2px 16px var(--background)60;
 }
 
 .skillsSeparator {
   margin: 2rem 0;
-  background: linear-gradient(to right, transparent, #4c1d9580, transparent);
+  background: linear-gradient(to right, transparent, #2A5D8580, transparent);
   height: 1px;
 }
 
@@ -42,15 +40,17 @@
 }
 
 .skillsCategoryCard {
-  background: linear-gradient(to bottom right, #0f172a80 50%, #1e293b80 50%);
-  border: 1px solid #334155;
-  transition: all 0.3s;
-  box-shadow: 0 4px 24px 0 #4c1d951a;
+  background: #1e2d30;
+  border: 1.5px solid rgba(255,255,255,0.04);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.08);
+  border-radius: 1.25rem;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
   opacity: 0;
 }
 .skillsCategoryCard:hover {
-  border-color: #4c1d9580;
-  box-shadow: 0 8px 32px 0 #4c1d9520;
+  border-color: rgba(255,255,255,0.10);
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
+  transform: scale(1.025);
 }
 
 .skillsCategoryHeader {
@@ -58,12 +58,13 @@
 }
 
 .skillsCategoryTitle {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: transparent;
+  background-image: none;
+  color: var(--foreground);
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #6d28d9, #a78bfa);
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 0 2px 12px #2A5D8540;
 }
 
 .skillsGrid {
@@ -93,20 +94,22 @@
 }
 
 .skillsItemCard {
-  background: linear-gradient(to bottom right, #1e293b80 50%, #33415580 50%);
-  border: 1px solid #475569;
-  transition: all 0.3s;
+  background: #1e2d30;
+  border: 1.5px solid rgba(255,255,255,0.04);
+  border-radius: 1rem;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
   cursor: pointer;
 }
 .skillsItemCard:hover {
-  border-color: #6d28d9;
-  transform: scale(1.05);
-  box-shadow: 0 8px 32px 0 #4c1d9520;
+  border-color: rgba(255,255,255,0.10);
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
+  transform: scale(1.045);
   cursor: default;
 }
 
 .skillsItemContent {
-  padding: 1rem;
+  padding: 1.25rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,18 +120,22 @@
 }
 
 .skillsItemIcon {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   margin-bottom: 0.75rem;
-  color: #d1d5db;
-  transition: color 0.3s, transform 0.3s;
+  color: var(--foreground);
+  filter: drop-shadow(0 2px 8px var(--text-accent)20);
+  transition: color 0.3s, transform 0.3s, filter 0.3s;
 }
 .skillsItemCard:hover .skillsItemIcon {
-  color: #a78bfa;
+  color: var(--foreground);
+  filter: drop-shadow(0 4px 16px var(--text-accent)80);
   transform: scale(1.1);
 }
 
 .skillsItemName {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
+  color: var(--foreground);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 8px #2A5D8520;
 } 

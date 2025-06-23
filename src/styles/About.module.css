@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0 1rem;
   text-align: center;
+  background: transparent;
 }
 
 .profileImage {
@@ -31,7 +32,7 @@
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--text-accent);
   opacity: 0;
 }
 @media (min-width: 640px) {
@@ -45,17 +46,15 @@
   }
 }
 .nameGradient {
-  background: linear-gradient(to right, #4c1d95, #7c3aed);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  background: none;
+  color: var(--text-accent);
 }
 
 .typingTitle {
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #2A5D85;
   opacity: 0;
 }
 @media (min-width: 640px) {
@@ -78,7 +77,7 @@
 
 .separator {
   margin: 2rem 0;
-  background: linear-gradient(to right, transparent, #4c1d9580, transparent);
+  background: linear-gradient(to right, transparent, #2A5D8580, transparent);
   height: 1px;
 }
 
@@ -96,33 +95,34 @@
   }
 }
 .downloadButton {
-  background: linear-gradient(to right, #4c1d95, #7c3aed);
-  color: #fff;
-  box-shadow: 0 4px 24px 0 #4c1d951a;
+  background: linear-gradient(to right, #2A5D85, #A3E9E4);
+  color: #061C36;
+  box-shadow: 0 4px 24px 0 #2A5D8520;
   transition: all 0.3s;
   opacity: 0;
 }
 .downloadButton:hover {
-  background: linear-gradient(to right, #2e1065, #4c1d95);
-  box-shadow: 0 8px 32px 0 #4c1d9520;
+  background: linear-gradient(to right, #085A24, #2A5D85);
+  box-shadow: 0 8px 32px 0 #2A5D8520;
+  color: #A3E9E4;
   transform: scale(1.05);
 }
 .downloadIcon {
   margin-right: 0.5rem;
 }
 .viewWorkButton {
-  border: 1px solid #4c1d9580;
-  color: #7c3aed;
+  border: 1px solid #2A5D8580;
+  color: #2A5D85;
   background: transparent;
-  box-shadow: 0 4px 24px 0 #4c1d951a;
+  box-shadow: 0 4px 24px 0 #2A5D8520;
   transition: all 0.3s;
   opacity: 0;
 }
 .viewWorkButton:hover {
-  border-color: #4c1d95;
-  background: #4c1d951a;
-  color: #4c1d95;
-  box-shadow: 0 8px 32px 0 #4c1d9520;
+  border-color: #2A5D85;
+  background: #2A5D8520;
+  color: #A3E9E4;
+  box-shadow: 0 8px 32px 0 #2A5D8520;
   transform: scale(1.05);
 }
 
@@ -133,13 +133,13 @@
   gap: 3rem;
 }
 .socialIcon {
-  color: #a1a1aa;
+  color: #2A5D85;
   transition: color 0.3s, transform 0.3s;
   opacity: 0;
   height: 6rem;
   width: 6rem;
 }
 .socialIcon:hover {
-  color: #7c3aed;
+  color: #A3E9E4;
   transform: scale(1.25);
 } 

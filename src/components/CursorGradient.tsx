@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import styles from './CursorGradient.module.css';
+import styles from '../styles/CursorGradient.module.css';
 
 const CursorGradient = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });

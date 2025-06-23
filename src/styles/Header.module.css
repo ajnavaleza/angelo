@@ -4,9 +4,9 @@
   left: 0;
   width: 100%;
   z-index: 50;
-  background: #090c1a;
-  border-bottom: 1px solid #181c2a;
-  box-shadow: 0 2px 16px 0 #181c2a33;
+  background: #001509;
+  border-bottom: 1px solid #2A5D85;
+  box-shadow: 0 2px 16px 0 #2A5D8520;
 }
 
 .navbar {
@@ -22,7 +22,7 @@
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  background: linear-gradient(to right, #4c1d95, #7c3aed);
+  background: linear-gradient(to right, #2A5D85, #085A24);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -50,7 +50,7 @@
 }
 
 .navButton {
-  color: #fff;
+  color: #A3E9E4;
   font-weight: 600;
   transition: all 0.3s;
   padding: 0.5rem;
@@ -59,7 +59,7 @@
   border: none;
 }
 .navButton:hover {
-  color: #f472b6;
+  color: #2A5D85;
   transform: scale(1.1);
 }
 
@@ -69,7 +69,7 @@
   bottom: -0.25rem;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #4c1d95, #7c3aed);
+  background: linear-gradient(to right, #2A5D85, #085A24);
   transition: width 0.3s;
 }
 .navButton:hover .navUnderline {
@@ -77,28 +77,28 @@
 }
 
 .resumeButton {
-  color: #fff;
+  color: #A3E9E4;
   font-weight: 600;
-  border-color: #4c1d9580;
+  border-color: #2A5D8580;
   transition: all 0.3s;
-  box-shadow: 0 2px 8px 0 #4c1d9520;
+  box-shadow: 0 2px 8px 0 #2A5D8520;
 }
 .resumeButton:hover {
-  color: #f472b6;
-  border-color: #4c1d95;
-  box-shadow: 0 4px 16px 0 #4c1d9520;
+  color: #085A24;
+  border-color: #2A5D85;
+  box-shadow: 0 4px 16px 0 #2A5D8520;
   transform: scale(1.1);
 }
 
 .mobileMenuButton {
   display: block;
-  color: #fff;
+  color: #A3E9E4;
   transition: color 0.3s, transform 0.3s;
   background: none;
   border: none;
 }
 .mobileMenuButton:hover {
-  color: #7c3aed;
+  color: #2A5D85;
   transform: scale(1.1);
 }
 @media (min-width: 768px) {
@@ -109,8 +109,8 @@
 
 .mobileMenu {
   display: block;
-  background: rgba(9, 12, 26, 0.95);
-  border-top: 1px solid #181c2a;
+  background: rgba(0, 21, 9, 0.95);
+  border-top: 1px solid #2A5D85;
   padding: 1rem 1.5rem;
   animation: fade-in 0.3s ease-out;
 }
@@ -129,25 +129,25 @@
 .mobileNavButton {
   width: 100%;
   justify-content: flex-start;
-  color: #fff;
+  color: #A3E9E4;
   font-weight: 600;
   transition: all 0.3s;
   background: none;
   border: none;
 }
 .mobileNavButton:hover {
-  color: #f472b6;
+  color: #2A5D85;
   transform: translateX(0.5rem);
 }
 
 .mobileResumeButton {
   width: 100%;
-  color: #fff;
+  color: #A3E9E4;
   font-weight: 600;
-  border-color: #4c1d9580;
+  border-color: #2A5D8580;
   transition: all 0.3s;
 }
 .mobileResumeButton:hover {
-  color: #f472b6;
-  border-color: #4c1d95;
+  color: #085A24;
+  border-color: #2A5D85;
 } 
