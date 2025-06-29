@@ -9,6 +9,22 @@ import styles from '../styles/ExperienceDetails.module.css';
 
 const experiences = [
   {
+    company: 'Baltimore Ravens (in partnership with Levy & E15 Group)',
+    position: 'Operational Analyst Intern',
+    location: 'Baltimore, MD',
+    description: [
+      '• Auditing food and beverage operations across 10+ NFL stadium events, inspecting 50+ concession points per event to validate digital signage accuracy, queue setup, product readiness, and POS system functionality.',
+      '• Capturing and analyzing 500+ data points per game on guest wait times using handheld ordering devices.',
+      '• Creating post-event reports and visual summaries in Excel and Python, identifying trends in operational bottlenecks and presenting findings to senior leadership to inform process improvements.',
+    ],
+    date: 'August 2025 - Present',
+    logo: '/ravens.jpg',
+    logoType: 'image',
+    bgColor: 'bg-purple-600',
+    textColor: 'text-white',
+    type: 'Internship'
+  },
+  {
     company: 'Baltimore Ravens',
     position: 'Data Analytics Intern',
     location: 'Baltimore, MD',
