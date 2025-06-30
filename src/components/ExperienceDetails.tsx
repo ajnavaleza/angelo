@@ -17,7 +17,7 @@ const experiences = [
       '• Capturing and analyzing 500+ data points per game on guest wait times using handheld ordering devices.',
       '• Creating post-event reports and visual summaries in Excel and Python, identifying trends in operational bottlenecks and presenting findings to senior leadership to inform process improvements.',
     ],
-    date: 'August 2025 - Present',
+    date: 'July 2025 - Present',
     logo: '/ravens.jpg',
     logoType: 'image',
     bgColor: 'bg-purple-600',
