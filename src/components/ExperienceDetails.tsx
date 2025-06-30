@@ -27,7 +27,7 @@ const experiences = [
   {
     company: 'Baltimore Ravens',
     position: 'Data Analytics Intern',
-    location: 'Baltimore, MD',
+    location: 'Owings Mills, MD',
     description: [
       '• Performed statistical analysis and built predictive models on datasets of over 5,000 NCAA football players to support data-informed scouting evaluations for the 2025 NFL Draft.',
       '• Embedded interactive Power BI and Tableau dashboards into an internal platform accessed by 20+ scouting staff, enabling comparative analysis of player metrics.',
