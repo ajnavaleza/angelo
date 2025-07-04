@@ -25,6 +25,22 @@ const experiences = [
     type: 'Internship'
   },
   {
+    company: 'Cooked.',
+    position: 'Software Development Intern',
+    location: 'College Park, MD',
+    description: [
+      '• Developed full-stack mobile application using React Native and TypeScript, delivering personalized recipe recommendations to 100+ users across iOS and Android platforms.',
+      '• Integrated Spoonacular API with caching and rate limiting capabilities, processing 150+ requests per minute while filtering 400,000+ recipes based on user preferences.',
+      '• Deployed backend infrastructure using Node.js, MongoDB Atlas, and Railway.app, implementing RESTful APIs with 99.9% uptime.'
+    ],
+    date: 'June 2025 - July 2025',
+    logo: '/shell.png',
+    logoType: 'image',
+    bgColor: 'bg-orange-500',
+    textColor: 'text-white',
+    type: 'Internship'
+  },
+  {
     company: 'Baltimore Ravens',
     position: 'Data Analytics Intern',
     location: 'Owings Mills, MD',
@@ -40,22 +56,7 @@ const experiences = [
     textColor: 'text-white',
     type: 'Internship'
   },
-  {
-    company: 'HouseMate',
-    position: 'Software Development Intern',
-    location: 'College Park, MD',
-    description: [
-      '• Built and deployed Python-based microservices using AWS Lambda and API Gateway to support real-time features for roommate task coordination.',
-      '• Dockerized Node.js services and launched them on Amazon ECS; used Terraform to manage scalable infrastructure and automate deployments.',
-      '• Optimized app responsiveness by integrating Amazon SQS and event-driven workflows, improving latency by 30\% during high traffic events.'
-    ],
-    date: 'June 2024 - August 2024',
-    logo: '/shell.png',
-    logoType: 'image',
-    bgColor: 'bg-orange-500',
-    textColor: 'text-white',
-    type: 'Internship'
-  }
+  
 ];
 
 const ExperienceDetails = () => {
