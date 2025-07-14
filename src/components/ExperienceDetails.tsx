@@ -13,9 +13,9 @@ const experiences = [
     position: 'Operational Analyst Intern',
     location: 'Baltimore, MD',
     description: [
-      '• Auditing food and beverage operations across 10+ NFL stadium events, inspecting 50+ concession points per event to validate digital signage accuracy, queue setup, product readiness, and POS system functionality.',
-      '• Capturing and analyzing 500+ data points per game on guest wait times using handheld ordering devices.',
-      '• Creating post-event reports and visual summaries in Excel and Python, identifying trends in operational bottlenecks and presenting findings to senior leadership to inform process improvements.',
+      '• Engineered comprehensive auditing workflows for 10+ NFL stadium events, validating digital signage systems and POS integrations across 50+ concession endpoints.',
+      '• Developed data collection methodologies capturing 500+ metrics per event and implemented analytical models that reduced customer wait times by 20%.',
+      '• Built automated reporting pipelines in Python and Excel to process operational datasets and delivered data-driven recommendations to executive stakeholders.',
     ],
     date: 'July 2025 - Present',
     logo: '/ravens.jpg',
@@ -29,9 +29,9 @@ const experiences = [
     position: 'Software Development Intern',
     location: 'College Park, MD',
     description: [
-      '• Developed full-stack mobile application using React Native and TypeScript, delivering personalized recipe recommendations to 100+ users across iOS and Android platforms.',
-      '• Integrated Spoonacular API with caching and rate limiting capabilities, processing 150+ requests per minute while filtering 400,000+ recipes based on user preferences.',
-      '• Deployed backend infrastructure using Node.js, MongoDB Atlas, and Railway.app, implementing RESTful APIs with 99.9% uptime.'
+      '• Engineered a full-stack React Native mobile application with TypeScript, featuring personalized recipe recommendations, dietary preference filtering, and real-time nutritional data integration.',
+      '• Architected intelligent recipe discovery system using Spoonacular API with advanced caching, rate limiting, and preference-based filtering algorithms, processing 150+ requests per minute while intelligently filtering 400,000+ recipes based on user dietary restrictions, allergies, and cuisine preferences.',
+      '• Designed and deployed scalable backend infrastructure using Node.js, MongoDB Atlas, and Railway.app, implementing RESTful APIs with JWT authentication, user preference management, and recipe bookmarking functionality.'
     ],
     date: 'June 2025 - July 2025',
     logo: '/shell.png',
