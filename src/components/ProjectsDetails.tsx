@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { useAnimations, useIntersectionAnimation } from '../hooks/useAnimations';
@@ -8,7 +9,16 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import styles from '../styles/ProjectsDetails.module.css';
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  tech: Array<{ name: string; color: string }>;
+  github: string;
+  external: string;
+}
+
+const projects: Project[] = [
     {
     title: 'Baltimore Ravens Data Analytics Project',
     description: 'Applied statistical modeling and predictive analytics on data for 5,000+ NCAA football players with interactive Power BI and Tableau dashboards.',
@@ -89,7 +99,7 @@ const ProjectsDetails = () => {
   const ref = useIntersectionAnimation(animateProjects);
 
   return (
-    <section ref={ref as React.RefObject<HTMLElement>} id="projects" className={styles.projectsSection}>
+    <section ref={ref} id="projects" className={styles.projectsSection}>
       <div className={styles.projectsContainer}>
         {/* Heading */}
         <h2 className={`${styles.projectsTitle} projects-title`}>Projects</h2>
