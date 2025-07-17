@@ -1,6 +1,6 @@
 'use client';
 
-import { SiPython, SiJavascript, SiTypescript, SiHtml5, SiRust, SiSwift, SiDart, SiMysql, SiTailwindcss, SiUnity, SiFlutter, SiRedis, SiFirebase, SiNumpy, SiPandas, SiOcaml, SiMongodb, SiGit, SiDocker, SiC, SiTableau, SiIntellijidea, SiAndroidstudio, SiEclipseide, SiXcode, SiRailway, SiPostman, SiReact} from "react-icons/si";
+import { SiPython, SiJavascript, SiTypescript, SiHtml5, SiRust, SiSwift, SiDart, SiMysql, SiTailwindcss, SiUnity, SiFlutter, SiRedis, SiFirebase, SiNumpy, SiPandas, SiOcaml, SiMongodb, SiGit, SiDocker, SiC, SiTableau, SiRailway, SiPostman, SiReact} from "react-icons/si";
 import { BiLogoJava} from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
 import { useAnimations, useIntersectionAnimation } from '../hooks/useAnimations';
