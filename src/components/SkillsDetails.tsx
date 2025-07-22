@@ -1,8 +1,8 @@
 'use client';
 
-import { SiPython, SiJavascript, SiTypescript, SiHtml5, SiRust, SiSwift, SiDart, SiMysql, SiTailwindcss, SiUnity, SiFlutter, SiRedis, SiFirebase, SiNumpy, SiPandas, SiOcaml, SiMongodb, SiGit, SiDocker, SiC, SiTableau, SiIntellijidea, SiAndroidstudio, SiEclipseide, SiXcode, SiNextdotjs} from "react-icons/si";
+import { SiAmazonec2, SiPython, SiJavascript, SiTypescript, SiHtml5, SiSwift,SiExpress, SiMysql, SiTailwindcss, SiUnity, SiFlutter, SiRedis, SiFirebase, SiNumpy, SiPandas, SiOcaml, SiMongodb, SiGit, SiDocker, SiC, SiTableau, SiReact, SiRailway, SiNextdotjs} from "react-icons/si";
 import { BiLogoJava} from "react-icons/bi";
-import { DiVisualstudio} from "react-icons/di";
+import { FaNodeJs } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 import { useAnimations, useIntersectionAnimation } from '../hooks/useAnimations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -18,14 +18,15 @@ const skillsData = {
     { name: 'TypeScript', icon: <SiTypescript /> },
     { name: 'HTML/CSS', icon: <SiHtml5 /> },
     { name: 'OCaml', icon: <SiOcaml /> },
-    { name: 'Rust', icon: <SiRust /> },
-    { name: 'Dart', icon: <SiDart /> },
     { name: 'Swift', icon: <SiSwift /> },
     { name: 'SQL', icon: <SiMysql /> }
   ],
   Frameworks: [
+    { name: 'React', icon: <SiReact /> },
+    { name: 'Node.js', icon: <FaNodeJs /> },
     { name: 'Next.js', icon: <SiNextdotjs /> },
     { name: 'TailwindCSS', icon: <SiTailwindcss /> },
+    { name: 'Express', icon: <SiExpress /> },
     { name: 'Unity', icon: <SiUnity /> },
     { name: 'Flutter', icon: <SiFlutter /> },
     { name: 'Redis', icon: <SiRedis /> },
@@ -38,12 +39,9 @@ const skillsData = {
     { name: 'Git', icon: <SiGit /> },
     { name: 'MongoDB', icon: <SiMongodb /> },
     { name: 'Docker', icon: <SiDocker /> },
-    { name: 'VS Code', icon: <VscVscode /> },
-    { name: 'Visual Studio', icon: <DiVisualstudio/> },
-    { name: 'IntelliJ', icon: <SiIntellijidea/> },
-    { name: 'Eclipse', icon: <SiEclipseide/> },
-    { name: 'Android Studio', icon: <SiAndroidstudio /> },
-    { name: 'Xcode', icon: <SiXcode/> }
+    { name: 'AWS EC2', icon: <SiAmazonec2 /> },
+    { name: 'Railway', icon: <SiRailway /> },
+    { name: 'VS Code', icon: <VscVscode /> }
   ]
 };
 
