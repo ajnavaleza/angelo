@@ -9,6 +9,22 @@ import styles from '../styles/ExperienceDetails.module.css';
 
 const experiences = [
   {
+    company: 'Erickson Senior Living',
+    position: 'Data Operations and Analytics Intern',
+    location: 'Catonsville, MD',
+    description: [
+      '• Designed and optimized Python-based ETL workflows to ingest, cleanse, and standardize departmental data, streamlining reporting processes and accelerating delivery timelines by 40\%.',
+      '• Leveraged advanced SQL queries to aggregate and integrate relational datasets, generating KPI dashboards that enhanced executive visibility into operational performance.',
+      '• Executed large-scale analytical projects by applying statistical modeling and visualization techniques to uncover inefficiencies and recommend data-backed process improvements.'
+    ],
+    date: 'September 2025 - Present',
+    logo: '/erickson.png',
+    logoType: 'image',
+    bgColor: 'bg-orange-500',
+    textColor: 'text-white',
+    type: 'Internship'
+  },
+  {
     company: 'Baltimore Ravens (in partnership with Levy & E15 Group)',
     position: 'Operational Analyst Intern',
     location: 'Baltimore, MD',
@@ -21,22 +37,6 @@ const experiences = [
     logo: '/ravens.jpg',
     logoType: 'image',
     bgColor: 'bg-purple-600',
-    textColor: 'text-white',
-    type: 'Internship'
-  },
-  {
-    company: 'Cooked.',
-    position: 'Software Development Intern',
-    location: 'College Park, MD',
-    description: [
-      '• Engineered a full-stack React Native mobile application with TypeScript, featuring personalized recipe recommendations, dietary preference filtering, and real-time nutritional data integration.',
-      '• Architected intelligent recipe discovery system using Spoonacular API with advanced caching, rate limiting, and preference-based filtering algorithms, processing 150+ requests per minute while intelligently filtering 400,000+ recipes based on user dietary restrictions, allergies, and cuisine preferences.',
-      '• Designed and deployed scalable backend infrastructure using Node.js, MongoDB Atlas, and Railway.app, implementing RESTful APIs with JWT authentication, user preference management, and recipe bookmarking functionality.'
-    ],
-    date: 'June 2025 - July 2025',
-    logo: '/shell.png',
-    logoType: 'image',
-    bgColor: 'bg-orange-500',
     textColor: 'text-white',
     type: 'Internship'
   },
