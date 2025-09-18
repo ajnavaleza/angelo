@@ -76,7 +76,7 @@
   overflow: hidden;
 }
 .projectImage {
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s;
 }
 .projectCard:hover .projectImage {
