@@ -73,7 +73,7 @@ const projects: Project[] = [
   {
     title: 'Cooked.',
     description: 'Engineered a full-stack TypeScript mobile app with personalized recipe recommendations, dietary preference filtering, and live nutritional data.',
-    image: '/cooked.PNG',
+    image: '/cooked.png',
     tech: [
       { name: 'TypeScript', color: 'bg-blue-500' },
       { name: 'Node.js', color: 'bg-purple-500' },
