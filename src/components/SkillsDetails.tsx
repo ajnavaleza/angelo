@@ -1,16 +1,10 @@
 'use client';
 
-<<<<<<< HEAD
 import React from 'react';
-import { SiPython, SiJavascript, SiTypescript, SiHtml5, SiRust, SiSwift, SiDart, SiMysql, SiTailwindcss, SiUnity, SiFlutter, SiRedis, SiFirebase, SiNumpy, SiPandas, SiOcaml, SiMongodb, SiGit, SiDocker, SiC, SiTableau, SiReact} from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { BiLogoJava} from "react-icons/bi";
-=======
-import { SiAmazonec2, SiPython, SiJavascript, SiTypescript, SiHtml5, SiSwift,SiExpress, SiMysql, SiTailwindcss, SiUnity, SiFlutter, SiRedis, SiFirebase, SiNumpy, SiPandas, SiOcaml, SiMongodb, SiGit, SiDocker, SiC, SiTableau, SiReact, SiRailway, SiNextdotjs} from "react-icons/si";
+import { SiAmazonec2, SiPython, SiJavascript, SiTypescript, SiHtml5, SiSwift, SiExpress, SiMysql, SiTailwindcss, SiUnity, SiFlutter, SiRedis, SiFirebase, SiNumpy, SiPandas, SiOcaml, SiMongodb, SiGit, SiDocker, SiC, SiTableau, SiReact, SiRailway, SiNextdotjs} from "react-icons/si";
 import { BiLogoJava} from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
->>>>>>> 99be2b383a8f4441c12dc9937f87ebec74a1f96c
 import { useAnimations, useIntersectionAnimation } from '../hooks/useAnimations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -38,14 +32,9 @@ const skillsData: SkillsData = {
     { name: 'SQL', icon: <SiMysql /> }
   ],
   Frameworks: [
-<<<<<<< HEAD
-    { name: 'Node.js', icon: <FaNodeJs /> },
     { name: 'React', icon: <SiReact /> },
-=======
-    { name: 'React', icon: <SiReact /> },
-    { name: 'Node.js', icon: <FaNodeJs /> },
     { name: 'Next.js', icon: <SiNextdotjs /> },
->>>>>>> 99be2b383a8f4441c12dc9937f87ebec74a1f96c
+    { name: 'Node.js', icon: <FaNodeJs /> },
     { name: 'TailwindCSS', icon: <SiTailwindcss /> },
     { name: 'Express', icon: <SiExpress /> },
     { name: 'Unity', icon: <SiUnity /> },
@@ -58,14 +47,11 @@ const skillsData: SkillsData = {
     { name: 'Git', icon: <SiGit /> },
     { name: 'MongoDB', icon: <SiMongodb /> },
     { name: 'Docker', icon: <SiDocker /> },
-<<<<<<< HEAD
     { name: 'Redis', icon: <SiRedis /> },
     { name: 'Firebase', icon: <SiFirebase /> },
-=======
     { name: 'AWS EC2', icon: <SiAmazonec2 /> },
     { name: 'Railway', icon: <SiRailway /> },
     { name: 'VS Code', icon: <VscVscode /> }
->>>>>>> 99be2b383a8f4441c12dc9937f87ebec74a1f96c
   ]
 };
 
