@@ -15,7 +15,7 @@ interface Project {
   image: string;
   tech: Array<{ name: string; color: string }>;
   github: string;
-  external: string;
+  external?: string;
 }
 
 const projects: Project[] = [
@@ -71,17 +71,16 @@ const projects: Project[] = [
     external: 'https://p0ke-vault.vercel.app/',
   },
   {
-    title: 'Investment Portfolio',
-    description: 'Architected a modern full-stack SPA enabling users to track, analyze, and optimize investment portfolios with real-time market data visualization and performance analytics.',
-    image: '/port.PNG',
+    title: 'Cooked.',
+    description: 'Engineered a full-stack TypeScript mobile app with personalized recipe recommendations, dietary preference filtering, and live nutritional data.',
+    image: '/cooked.PNG',
     tech: [
-      { name: 'Angular 16', color: 'bg-red-500' },
       { name: 'TypeScript', color: 'bg-blue-500' },
-      { name: 'Firebase', color: 'bg-orange-500' },
-      { name: 'Alpha Vantage API', color: 'bg-purple-500' },
+      { name: 'Node.js', color: 'bg-purple-500' },
+      { name: 'MongoDB Atlas', color: 'bg-orange-500' },
+      { name: 'Spoonacular API', color: 'bg-purple-500' },
     ],
-    github: 'https://github.com/ajnavaleza/InvestmentPortfolio',
-    external: 'https://investment-portfolio-ten.vercel.app/',
+    github: 'https://github.com/ajnavaleza/Cooked',
   }
 ];
 
@@ -146,16 +145,18 @@ const ProjectsDetails = () => {
                     Code
                   </a>
                 </Button>
-                <Button
-                  size="sm"
-                  className={styles.projectDemoButton}
-                  asChild
-                >
-                  <a href={project.external} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink size={16} className={styles.projectActionIcon} />
-                    Live Demo
-                  </a>
-                </Button>
+                {project.external && (
+                  <Button
+                    size="sm"
+                    className={styles.projectDemoButton}
+                    asChild
+                  >
+                    <a href={project.external} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={16} className={styles.projectActionIcon} />
+                      Live Demo
+                    </a>
+                  </Button>
+                )}
               </div>
             </div>
           ))}
