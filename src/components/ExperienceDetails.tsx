@@ -20,7 +20,7 @@ const experiences = [
     date: 'September 2025 - Present',
     logo: '/erickson.png',
     logoType: 'image',
-    bgColor: 'bg-orange-500',
+    bgColor: 'bg-white-500',
     textColor: 'text-white',
     type: 'Internship'
   },
@@ -91,7 +91,7 @@ const ExperienceDetails = () => {
               <div key={index} className={`${styles.experienceItem} experience-item`}>
                 {/* Timeline Avatar */}
                 <div className={styles.timelineAvatarWrapper}>
-                  <Avatar className={styles.timelineAvatar}>
+                  <Avatar className={`${styles.timelineAvatar} ${exp.logoType === 'image' ? exp.bgColor : ''}`}>
                     {exp.logoType === 'image' ? (
                       <AvatarImage 
                         src={exp.logo} 
